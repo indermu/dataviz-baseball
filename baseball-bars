@@ -1,0 +1,9 @@
+
+
+.chart {
+	height: 500 px;
+}
+
+.bar {
+	height:12px; 
+}
