@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 function getData (){
-	$.getJSON ("js/Assignment 1 baseball player_Tsai.json", function(data) {
+	$.getJSON ("js/Assignment_1_baseball_player_Tsai.json", function(data) {
 		playerData= data;
 		drawChart();
 	});
@@ -19,12 +19,14 @@ function drawChart () {
 
 	 	var width= item.HR * 10;
 
-	 {$.("chart").append (
+	 $(".chart").append(
 	 	 	"<div class='col-md-12 bar-container'>"+
 	 	 	"<div class='year'>"+item.year+"</div>"+
 	 	 	"<div class='bar' style='width: "+width+"px'></div>"+
 	 	 	"<div class='total'>"+item.HR+"</div>"+
-	 	 </div>"" 
+
+	 	 	"</div>"
+	 	
 	 );
 
 	 }); 
